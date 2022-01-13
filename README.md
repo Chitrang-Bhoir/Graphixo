@@ -18,7 +18,7 @@ A tool to simulate line drawing algorithms namely Digital Differential Analyzer 
     pip install PyQt5
     ```
 3. Open `main.py` in the folder.
-4. Click on the algorithm you want to simulate.
+4. Click on the algorithm(`DDA` or `BLA`) you want to simulate.
 5. Click on the grid to select two distinct points. You will see the point co-ordinates on bottom-left label.
 6. `START` button will get enabled. Click on that.
 7. The simulation will start. Keep clicking `NEXT` and watch how the algorithm works. You can also view the parameters in the bottom-centre label.
@@ -34,7 +34,7 @@ A tool to simulate line drawing algorithms namely Digital Differential Analyzer 
 <img align="center" width="200" height="275" src='https://github.com/Chitrang-Bhoir/Linegorithm/blob/main/ss/midway.png'>
 <img align="center" width="200" height="275" src='https://github.com/Chitrang-Bhoir/Linegorithm/blob/main/ss/line.png'>
   
-__Oh! Just to clarify, This is not the snake game:wink:.__
+__Oh! Just to clarify, This is not a snake game:wink:.__
 </p>
 
 ## References
@@ -52,4 +52,5 @@ __Oh! Just to clarify, This is not the snake game:wink:.__
 </details>
 
 ---
-![visitors](https://visitor-badge.glitch.me/badge?page_id=chitrang-bhoir.linegorithm&left_color=#1c1c1c&right_color=#00ad37)  
+![visitors](https://visitor-badge.glitch.me/badge?page_id=chitrang-bhoir.linegorithm&left_color=black&right_color=lime)
+<a href="https://github.com/Chitrang-Bhoir" alt="https://github.com/Chitrang-Bhoir"><img align="right" src="https://img.shields.io/static/v1?style=for-the-badge&label=CREATED%20BY&message=CHITRANG&color=0ad37"></a>
