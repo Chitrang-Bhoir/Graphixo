@@ -52,5 +52,5 @@ __Oh! Just to clarify, This is not a snake game:wink:.__
 </details>
 
 ---
-[![visitors](https://visitor-badge.glitch.me/badge?page_id=chitrang-bhoir.linegorithm&left_color=black&right_color=lime)](https://github.com/Chitrang-Bhoir/Linegorithm/)
+[![visitors](https://visitor-badge.glitch.me/badge?page_id=chitrang-bhoir.linegorithm&left_color=black&right_color=limegreen)](https://github.com/Chitrang-Bhoir/Linegorithm/)
 <a href="https://github.com/Chitrang-Bhoir" alt="https://github.com/Chitrang-Bhoir"><img align="right" src="https://img.shields.io/static/v1?style=for-the-badge&label=CREATED%20BY&message=CHITRANG&color=0ad37"></a>
