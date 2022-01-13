@@ -12,7 +12,7 @@ A tool to simulate line drawing algorithms namely Digital Differential Analyzer 
     ```shell
     git clone https://github.com/Chitrang-Bhoir/Linegorithm.git
     ```
-   or download and extract the zip folder from [here](https://github.com/Chitrang-Bhoir/Linegorithm).
+   or download and extract the zip folder from [here](https://github.com/Chitrang-Bhoir/Linegorithm/archive/refs/heads/main.zip).
 2. Install required library `PyQt5` using...
     ```shell
     pip install PyQt5
