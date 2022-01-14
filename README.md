@@ -18,11 +18,21 @@ A tool to simulate line drawing algorithms namely Digital Differential Analyzer 
     pip install PyQt5
     ```
 3. Open `main.py` in the folder.
-4. Click on the algorithm(`DDA` or `BLA`) you want to simulate.
+4. Click on the algorithm(`DDA` or `BLA`) you want to simulate or press `D` or `B` key on keyboard respectively for each algorithm.
 5. Click on the grid to select two distinct points. You will see the point co-ordinates on bottom-left label.
-6. `START` button will get enabled. Click on that.
-7. The simulation will start. Keep clicking `NEXT` and watch how the algorithm works. You can also view the parameters in the bottom-centre label.
-8. Once the line is completed. You can clear the grid to try new lines and algorithm.
+6. `START` button will get enabled. Click on that or press `ENTER`. If you want to play the simulation automatically, press `SPACE` bar.
+7. The simulation will start. Keep clicking `NEXT` or press `ENTER`(no need if playing automated simulation) and watch how the algorithm works. You can also view the parameters in the bottom-centre label.
+8. Once the line is completed. You can clear the grid by clicking `CLEAR` or pressing `ENTER` to try new lines and algorithm.
+9. If you want to close the application, click :x: or press `Q` key on keyboard.
+
+## Shortcut Cheatsheet
+|Shortcut|Task|
+|--|--|
+|B|Select Bresenham's Line Algorithm|
+|D|Select Digital Differential Analyzer|
+|Enter|START/NEXT/CLEAR|
+|Space|Play simulation|
+|Q|Close window|
 
 ## Screenshots
 <p align="center">
