@@ -109,7 +109,7 @@ class Window(object):
            Instantiation QShortcut and bind them to the window.
            ⦿ Keyboard shortcuts are as follows:
                 1. B     =  Select BLA
-                2. D     =  Export DDA
+                2. D     =  Select DDA
                 3. Enter =  Click START/NEXT/CLEAR
                 4. Space =  Play simulation
                 5. Q     =  Close window
