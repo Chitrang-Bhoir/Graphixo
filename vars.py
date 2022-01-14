@@ -52,6 +52,7 @@ ALERT_STYLE = f'* {{color : {DARK2};\
 
 #grid
 RESOLUTION = 50
+INTERVAL = 100
 GRID_S = 400
 GRID_STYLE = f'background : {DARK};'
 

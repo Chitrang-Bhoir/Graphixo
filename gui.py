@@ -1,9 +1,10 @@
 import sys
 
-from PyQt5.QtGui import QCursor, QIcon
+from PyQt5.QtGui import QCursor, QIcon, QKeySequence
 from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QLabel,\
- QHBoxLayout, QVBoxLayout, QGridLayout
+ QHBoxLayout, QVBoxLayout, QGridLayout, QShortcut
 from PyQt5.QtCore import Qt
+from PyQt5.QtTest import QTest
 
 from bla import BLA
 from dda import DDA
@@ -62,6 +63,7 @@ class Window(object):
         self.initVars()
         self.initApp()
         self.initWindow()
+        self.initShortcuts()
 
         self.createAlgoBar()
         self.createDDA()
@@ -72,6 +74,7 @@ class Window(object):
         self.createPointLabel()
         self.createParamLabel()
         self.createNext()
+
 
     def initVars(self):
         '''Initialize variables -
@@ -85,6 +88,7 @@ class Window(object):
         self.RESOLUTION = RESOLUTION
         self.STATE = 'select pt1'
         self.INDEX = 0
+        self.INTERVAL = INTERVAL
 
     def initApp(self):
         self.app = QApplication(sys.argv)
@@ -99,6 +103,32 @@ class Window(object):
         self.win.setWindowTitle(WINDOW_TITLE)
         self.win.setStyleSheet(WINDOW_STYLE)
         self.win.setWindowIcon(QIcon(WINDOW_ICON))
+    
+    def initShortcuts(self) -> None:
+        '''Initialize keyboard shortcuts.
+           Instantiation QShortcut and bind them to the window.
+           ⦿ Keyboard shortcuts are as follows:
+                1. B     =  Select BLA
+                2. D     =  Export DDA
+                3. Enter =  Click START/NEXT/CLEAR
+                4. Space =  Play simulation
+                5. Q     =  Close window
+        '''
+        QShortcut(QKeySequence("B"), self.win).activated.connect(
+            self.BLA
+        )
+        QShortcut(QKeySequence("D"), self.win).activated.connect(
+            self.DDA
+        )
+        QShortcut(QKeySequence("Return"), self.win).activated.connect(
+            self.next
+        )
+        QShortcut(QKeySequence("Space"), self.win).activated.connect(
+            self.playSimulation
+        )
+        QShortcut(QKeySequence("Q"), self.win).activated.connect(
+            self.win.close
+        )
 
     def execApp(self) -> None:
         self.win.show()
@@ -303,3 +333,9 @@ class Window(object):
             self.next_btn.setDisabled(True)
             self.next_btn.setStyleSheet(DESELECTED_STYLE)
             self.STATE = 'select pt1'
+
+    def playSimulation(self):
+        if self.STATE == 'start':
+            while self.STATE != 'clear':
+                self.next()
+                QTest.qWait(self.INTERVAL)
