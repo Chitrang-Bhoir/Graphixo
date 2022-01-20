@@ -345,7 +345,7 @@ class Window(object):
                                     \nr = -')
             elif self.ALGORITHM == 'ellipse':
                 self.pt_lbl.setText(f'x = {self.x1}\ny = {self.y1}\n\
-                                    \na = -\nb = -')
+                                    \naxis along x = -\naxis along y = -')
 
             self.STATE = 'select pt2'
 
@@ -397,7 +397,7 @@ class Window(object):
                     self.b = abs(self.y2 - self.y1)
 
                     self.pt_lbl.setText(f'x = {self.x1}\ny = {self.y1}\n\
-                                    \na = -\nb = {self.b}')
+                                    \naxis along x = -\naxis along y = {self.b}')
 
                     self.STATE = 'select pt3'
                     
@@ -408,10 +408,10 @@ class Window(object):
 
                     self.x3 = x
                     self.y3 = y
-                    self.a = abs(self.x3 - self.x1 + 1)
+                    self.a = abs(self.x3 - self.x1)
 
                     self.pt_lbl.setText(f'x = {self.x1}\ny = {self.y1}\n\
-                                    \na = {self.a}\nb = {self.b}')
+                                    \naxis along x = {self.a}\naxis along y = {self.b}')
 
                     for pixel in self.pixel_matrix:
                         pixel.setDisabled(True)
@@ -531,7 +531,7 @@ class Window(object):
                                         \nx-plot = {xplot}\ny-plot = {yplot}')
 
             elif self.ALGORITHM == 'ellipse':
-                algoclass = Ellipse(self.x1, self.y1, self.a, self.b)
+                algoclass = Ellipse(self.x1, self.y1, self.a + 1, self.b)
                 self.pixel_set = algoclass.getPixels()
 
                 xplot = self.pixel_set[self.INDEX][0]

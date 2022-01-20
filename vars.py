@@ -133,7 +133,7 @@ SLIDER_STYLE = f'QSlider::groove:horizontal {{\
                                              }}'
 POINT_LABEL_TXT_LINE = 'x1 = -\ny1 = -\n\nx2 = -\ny2 = -'
 POINT_LABEL_TXT_CIRCLE = 'x = -\ny = -\n\nr = -'
-POINT_LABEL_TXT_ELLIPSE = 'x = -\ny = -\n\na = -\nb = -'
+POINT_LABEL_TXT_ELLIPSE = 'x = -\ny = -\n\nradius along x = -\nradius along y = -'
 PARAM_LABEL_TXT_DDA = 'x = -\ny = -\n\nx-plot = -\ny-plot = -'
 PARAM_LABEL_TXT_BLA = 'p = -\n\nx-plot = -\ny-plot = -'
 PIXEL_LABEL_TXT = 'Pixels to be highlighted = -'
