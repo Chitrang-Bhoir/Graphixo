@@ -1,0 +1,43 @@
+QApplication() app
+    |
+    |===QWidget() win
+            |
+            |===QWidget() titlebar
+            |       |
+            |       |===QLabel() icon
+            |       |
+            |       |===QLabel() title
+            |       |
+            |       |===QPushButton() minimize
+            |       |
+            |       |===QPushButton() close
+            |
+            |===QWidget() algobar
+            |       |
+            |       |===QPushButton() dda_btn
+            |       |
+            |       |===QPushButton() bla_btn
+            |       |
+            |       |===QPushButton() circle_btn
+            |       |
+            |       |===QPushButton() ellipse_btn
+            |
+            |===QWidget() grid
+            |       |
+            |       |===list[QPushButton()] pixel_matrix
+            |
+            |===QWidget() parabar
+                    |
+                    |===QLabel() pt_lbl
+                    |   
+                    |===QLabel() para_lbl
+                    |
+                    |===QLabel() pixel_lbl
+                    |
+                    |===QWidget() interval_lbl
+                    |       |
+                    |       |===QSlider() interval_slider
+                    |       |
+                    |       |===QLabel() interval_value
+                    |
+                    |===QPushButton() next_btn
